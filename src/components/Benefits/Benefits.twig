@@ -1,0 +1,114 @@
+<section id="what-we-do" class="max-w-container mx-auto px-4">
+	<div class="py-8 px-6 bg-gray-50 rounded-xl md:py-16 md:px-12 lg:px-[4.375rem]">
+		<h2 class="text-4xl font-bold text-center mb-12 lg:text-5xl">
+			Ready to Launch website within <span class="underline-highlight">2-4 weeks?</span>
+		</h2>
+
+		<div class="flex justify-center gap-x-8 gap-[3.75rem] mb-24 relative after:content-[''] after:block after:w-[18rem] after:border-t after:border-gray-200 after:absolute after:top-full after:left-1/2 after:mt-12 after:-translate-x-1/2 md:gap-x-[3.75rem] md:after:w-[33.75rem]">
+			<div class="relative before:content-[''] before:block before:h-12 before:border-l before:border-gray-200 before:absolute before:top-full before:left-1/2">
+				<img src="./assets/img/photoshop.svg"
+					alt="Photoshop"
+					class="w-16 h-16 md:w-[7.5rem] md:h-[7.5rem]"
+					width="120"
+					height="120"
+					loading="lazy" />
+			</div>
+
+			<div class="relative before:content-[''] before:block before:h-12 before:border-l before:border-gray-200 before:absolute before:top-full before:left-1/2">
+				<img src="./assets/img/xd.svg"
+					alt="Adobe XD"
+					class="w-16 h-16 md:w-[7.5rem] md:h-[7.5rem]"
+					width="120"
+					height="120"
+					loading="lazy" />
+			</div>
+
+			<div class="relative before:content-[''] before:block before:h-12 before:border-l before:border-gray-200 before:absolute before:top-full before:left-1/2">
+				<img src="./assets/img/figma.svg"
+					alt="Figma"
+					class="w-16 h-16 md:w-[7.5rem] md:h-[7.5rem]"
+					width="120"
+					height="120"
+					loading="lazy" />
+			</div>
+
+			<div class="relative before:content-[''] before:block before:h-12 before:border-l before:border-gray-200 before:absolute before:top-full before:left-1/2">
+				<img src="./assets/img/sketch.svg"
+					alt="Sketch"
+					class="w-16 h-16 md:w-[7.5rem] md:h-[7.5rem]"
+					width="120"
+					height="120"
+					loading="lazy" />
+			</div>
+		</div>
+
+		<div class="grid gap-12 mb-12 md:grid-cols-3">
+			<div class="flex items-center bg-white px-8 py-10 rounded-xl relative after:content-[''] after:block after:border-l after:h-12 after:border-gray-200 after:absolute after:bottom-full after:left-1/2 md:after:bottom-auto md:after:top-1/2 md:after:left-full md:after:w-12 md:after:h-auto md:after:border-t md:after:border-l-0">
+				<span class="mr-4 text-5xl leading-[0]">
+					{% include '../Icon/Icon.twig' with {
+						icon: 'wordpress'
+					} %}
+				</span>
+				<p class="text-primary text-xl">
+					Tailor made Wordpress theme&nbsp;and plugins
+				</p>
+			</div>
+
+			<div class="flex items-center bg-white px-8 py-10 rounded-xl relative before:content-[''] before:block before:h-12 before:border-l before:border-gray-200 before:absolute before:bottom-full before:left-1/2">
+				<span class="mr-4 text-5xl leading-[0]">
+					{% include '../Icon/Icon.twig' with {
+						icon: 'browser'
+					} %}
+				</span>
+				<p class="text-primary text-xl">
+					Responsive HTML/CSS Templates
+				</p>
+			</div>
+
+			<div class="flex items-center bg-white px-8 py-10 rounded-xl relative after:content-[''] after:block after:border-l after:h-12 after:border-gray-200 after:absolute after:bottom-full after:right-1/2 md:after:bottom-auto md:after:top-1/2 md:after:right-full md:after:w-12 md:after:h-auto md:after:border-t md:after:border-l-0">
+				<span class="mr-4 text-5xl leading-[0]">
+					{% include '../Icon/Icon.twig' with {
+						icon: 'analytics'
+					} %}
+				</span>
+				<p class="text-primary text-xl">
+					Reliable website analytics
+				</p>
+			</div>
+		</div>
+
+		<h3 class="flex items-center uppercase font-bold text-center text-sm text-gray-500 mb-10 before:content-[''] before:border-t before:border-gray-200 before:flex-1 before:mr-6 after:content-[''] after:border-t after:border-gray-200 after:flex-1 after:ml-6">
+			Optimized for
+		</h3>
+
+		<div class="grid grid-cols-2 gap-8 mb-16 md:grid-cols-4 md:gap-12 lg:px-8">
+			{% include '../FeatureBox/FeatureBox.twig' with {
+				icon: 'speed',
+				title: 'Fast Speed',
+				description: 'Funguje pod taktovkou třech silných osobností z různých oborů digitálu.'
+			} %}
+
+			{% include '../FeatureBox/FeatureBox.twig' with {
+				icon: 'security',
+				title: 'Strong Security',
+				description: 'Funguje pod taktovkou třech silných osobností z různých oborů digitálu.'
+			} %}
+
+			{% include '../FeatureBox/FeatureBox.twig' with {
+				icon: 'seo',
+				title: 'Great SEO',
+				description: 'Funguje pod taktovkou třech silných osobností z různých oborů digitálu.'
+			} %}
+
+			{% include '../FeatureBox/FeatureBox.twig' with {
+				icon: 'devices',
+				title: 'All Browsers & Devices',
+				description: 'Funguje pod taktovkou třech silných osobností z různých oborů digitálu.'
+			} %}
+		</div>
+
+		<div class="text-center">
+			<a href="#contactPopup" class="btn-primary js-open-popup"><span class="relative z-10">Get your quote now</span></a>
+		</div>
+	</div>
+</section>

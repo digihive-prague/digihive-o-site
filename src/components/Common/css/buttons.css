@@ -1,0 +1,27 @@
+@layer components {
+	.btn-primary {
+		@apply inline-flex justify-center;
+		@apply min-w-[16.5rem] py-5 px-14;
+		@apply relative;
+		@apply bg-white bg-to-left-gradient rounded-full shadow;
+		@apply text-center text-white leading-5 font-medium;
+		@apply transition-all duration-500;
+	}
+
+	.btn-primary:hover {
+		@apply border-primary;
+		@apply text-white;
+	}
+
+	.btn-primary:after {
+		@apply content-[''];
+		@apply block w-full h-full;
+		@apply absolute top-0 left-0 z-0;
+		@apply bg-primary rounded-full opacity-0;
+		@apply transition duration-500;
+	}
+
+	.btn-primary:hover:after {
+		@apply opacity-100;
+	}
+}

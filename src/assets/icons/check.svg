@@ -1,0 +1,12 @@
+<svg id="icon-check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.26 18.43">
+    <defs>
+        <style>#icon-check path{fill:url(#icon-check-gradient);}</style>
+        <linearGradient id="icon-check-gradient" x1="-271.84" y1="407.04" x2="-272.84" y2="407.04"
+                        gradientTransform="matrix(20.26, 0, 0, -18.43, 5528.99, 7512.76)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#c52fef"/>
+            <stop offset="0.6" stop-color="#6991f0"/>
+            <stop offset="1" stop-color="#24d2ee"/>
+        </linearGradient>
+    </defs>
+    <path d="M19.14,0a1.06,1.06,0,0,0-.86.5l-10,15.28L1.83,10.19A1.06,1.06,0,1,0,.29,11.65a.86.86,0,0,0,.14.13l7.4,6.4a1.07,1.07,0,0,0,1.5-.12l.08-.12L20.07,1.65A1,1,0,0,0,19.8.18,1,1,0,0,0,19.15,0Z"/>
+</svg>

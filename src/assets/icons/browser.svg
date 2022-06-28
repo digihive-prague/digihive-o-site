@@ -1,0 +1,12 @@
+<svg id="icon-browser" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45 45">
+    <defs>
+        <style>#icon-browser path{fill:url(#icon-browser-gradient);}</style>
+        <linearGradient id="icon-browser-gradient" x1="-267.89" y1="435.05" x2="-268.89" y2="434.05" gradientTransform="matrix(45, 0, 0, -45, 12100, 19577.04)"
+                        gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#c52fef"/>
+            <stop offset="0.6" stop-color="#6991f0"/>
+            <stop offset="1" stop-color="#24d2ee"/>
+        </linearGradient>
+    </defs>
+    <path d="M1.07,0A1.07,1.07,0,0,0,0,1.07V11.79a1.07,1.07,0,0,0,1.07,1.07H43.93A1.07,1.07,0,0,0,45,11.79V1.07A1.07,1.07,0,0,0,43.93,0ZM2.14,2.14H42.86v8.57H2.14ZM6.43,5.36A1.07,1.07,0,1,0,7.5,6.43,1.07,1.07,0,0,0,6.43,5.36Zm4.29,0a1.07,1.07,0,1,0,1.07,1.07,1.07,1.07,0,0,0-1.07-1.07h0Zm4.28,0a1.07,1.07,0,1,0,1.07,1.07h0A1.07,1.07,0,0,0,15,5.36ZM0,16.07V43.93A1.07,1.07,0,0,0,1.07,45H43.93A1.07,1.07,0,0,0,45,43.93V16.07H42.86V42.86H2.14V16.07Zm6.43,0a1.07,1.07,0,0,0-1.07,1.07V38.57a1.07,1.07,0,0,0,1.07,1.07H20.36a1.07,1.07,0,0,0,1.07-1.07V17.14a1.07,1.07,0,0,0-1.07-1.07Zm18.21,0v2.14h15V16.07ZM7.5,18.21H19.29V37.5H7.5Zm17.14,3.22v2.14h15V21.43Zm0,5.36v2.14h15V26.79Zm0,5.35v2.15h15V32.14Zm0,5.36v2.14h15V37.5Z"/>
+</svg>

@@ -1,0 +1,51 @@
+.form-input {
+	@apply w-full py-2 px-4;
+	@apply bg-gray-500 bg-opacity-30 border border-gray-500 border-opacity-30 rounded;
+	@apply text-white;
+	@apply placeholder:text-gray-500;
+	@apply focus:border-gray-500 hover:border-gray-500;
+	@apply disabled:bg-gray-500 disabled:bg-opacity-10 disabled:text-white disabled:text-opacity-50 disabled:pointer-events-none;
+}
+
+.form-input:focus-visible {
+	outline: none;
+}
+
+input[type='file'].form-input {
+	@apply text-gray-500;
+	@apply file:mr-4 file:py-1 file:px-4;
+	@apply file:rounded file:border-0;
+	@apply file:text-sm;
+	@apply file:bg-gray-500 file:bg-opacity-30 file:text-gray-300;
+	@apply cursor-pointer file:cursor-pointer;
+}
+
+input[type='file'].form-input:hover {
+	@apply file:bg-gray-500 file:bg-opacity-50 file:text-white;
+}
+
+.form-checkbox {
+	@apply appearance-none;
+	@apply w-6 h-6;
+	@apply mr-3;
+	@apply bg-gray-500 bg-opacity-30 border border-gray-500 border-opacity-30 rounded;
+	@apply hover:border-gray-500;
+	@apply cursor-pointer;
+}
+
+.form-checkbox:checked {
+	@apply bg-[length:.875rem_.875rem] bg-center bg-no-repeat;
+
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMjAuMjYgMTguNDMiPg0KICAgIDxwYXRoIGZpbGw9IiNCNTUzRjEiIGQ9Ik0xOS4xNCwwYTEuMDYsMS4wNiwwLDAsMC0uODYuNWwtMTAsMTUuMjhMMS44MywxMC4xOUExLjA2LDEuMDYsMCwxLDAsLjI5LDExLjY1YS44Ni44NiwwLDAsMCwuMTQuMTNsNy40LDYuNGExLjA3LDEuMDcsMCwwLDAsMS41LS4xMmwuMDgtLjEyTDIwLjA3LDEuNjVBMSwxLDAsMCwwLDE5LjguMTgsMSwxLDAsMCwwLDE5LjE1LDBaIi8+DQo8L3N2Zz4=');
+}
+
+/**
+ * Form validation
+ */
+.form-group--is-invalid .form-input {
+	@apply border-red-500;
+}
+
+.form-group--is-invalid .form-group__feedback {
+	@apply block;
+}

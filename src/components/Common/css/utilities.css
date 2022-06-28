@@ -1,0 +1,22 @@
+.underline-highlight {
+	@apply relative z-[1] whitespace-nowrap;
+}
+
+.underline-highlight::before {
+	@apply content-[''];
+	@apply absolute bottom-2 -left-1 -right-1 z-[-1];
+	@apply h-[0.2em];
+
+	background: linear-gradient(
+		to right,
+		rgba(197, 47, 239, 0.5) 0,
+		rgba(105, 145, 240, 0.5) 60%,
+		rgba(36, 211, 238, 0.5) 100%
+	);
+}
+
+@screen lg {
+	.underline-highlight::before {
+		@apply h-[0.3em];
+	}
+}

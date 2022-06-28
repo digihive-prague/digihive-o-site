@@ -1,0 +1,27 @@
+<div class="max-w-container mx-auto px-4 mb-8">
+	<div class="testimonials-carousel swiper">
+		<div class="swiper-wrapper pb-12">
+			{% for i in 0..1 %}
+				<div class="swiper-slide">
+					{% include '../Testimonial/Testimonial.twig' with {
+						title: 'Clients says',
+						content: '"Spolupráce byla bezchybná. Moji kluci z&nbsp;Inevia naprosto přesně ví co dělají. Kdo potřebuje web, ať se jim ozve."',
+						button: {
+							title: 'Contact us now',
+							url: '#contactPopup'
+						},
+						author: {
+							name: 'Tomáš Hruška',
+							position: "Country Managing Director<br />L'Oréal Czech republic",
+							photo: 'tomas-hruska'
+						}
+					} %}
+				</div>
+			{% endfor %}
+		</div>
+
+		<div class="absolute bottom-0 left-0 w-full">
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+</div>

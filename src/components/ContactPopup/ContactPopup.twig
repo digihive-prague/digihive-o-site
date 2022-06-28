@@ -1,0 +1,123 @@
+<dialog id="contactPopup" class="hidden fixed top-0 left-0 z-50 w-full h-full bg-gray-900 text-white overflow-auto">
+	<header class="flex items-center p-4 sm:p-8">
+		<a href="/">
+			<img src="./assets/img/digihive-logo-white.svg"
+				alt="digihive"
+				class="w-[12.5rem] h-[3.625rem]"
+				width="200"
+				height="58"
+				loading="lazy" />
+		</a>
+
+		<button type="button" id="contactPopupClose" class="inline-flex items-center text-primary ml-auto">
+			<span class="mr-3">Close</span>
+			<span class="inline-flex items-center justify-center w-12 h-12 text-xl">
+				{% include '../../components/Icon/Icon.twig' with {
+					icon: 'times'
+				} %}
+			</span>
+		</button>
+	</header>
+
+	<div class="max-w-[40.125rem] p-4 mx-auto">
+		<h2 class="text-5xl font-bold mb-10">
+			<span class="underline-highlight">Write</span> us
+		</h2>
+
+		<form class="contact-form" action="#" method="post" enctype="multipart/form-data" novalidate>
+			<div class="form-group hidden">
+				<input type="text" name="as_id" class="form-input as-field" />
+			</div>
+
+			<div class="form-group hidden">
+				<input type="text" name="as_username" class="form-input as-field" />
+			</div>
+
+			<div class="form-group hidden">
+				<input type="text" name="as_message" class="form-input as-field" />
+			</div>
+
+			<div class="grid gap-x-4 gap-y-8 mb-8 sm:grid-cols-3">
+				<div class="form-group">
+					<label for="fullName" class="block font-bold uppercase text-gray-300 text-xs mb-3">Name and surname</label>
+					<input type="text" id="fullName" name="fullname" placeholder="Name and surname" class="form-input" required />
+					<p class="form-group__feedback hidden text-sm mt-1 text-red-500">
+						Please enter your name.
+					</p>
+				</div>
+
+				<div class="form-group">
+					<label for="phone" class="block font-bold uppercase text-gray-300 text-xs mb-3">Phone</label>
+					<input type="tel" id="phone" name="phone" placeholder="+420" class="form-input" required />
+					<p class="form-group__feedback hidden text-sm mt-1 text-red-500">
+						Please enter valid phone.
+					</p>
+				</div>
+
+				<div class="form-group">
+					<label for="email" class="block font-bold uppercase text-gray-300 text-xs mb-3">Email</label>
+					<input type="email" id="email" name="email" placeholder="@" class="form-input" required />
+					<p class="form-group__feedback hidden text-sm mt-1 text-red-500">
+						Please enter valid email.
+					</p>
+				</div>
+			</div>
+
+			<div class="form-group mb-8">
+				<label for="company" class="block font-bold uppercase text-gray-300 text-xs mb-3">Company name</label>
+				<input type="text" id="company" name="company" placeholder="Company name" class="form-input" />
+			</div>
+
+			<div class="form-group mb-8">
+				<label for="message" class="block font-bold uppercase text-gray-300 text-xs mb-3">Your message</label>
+				<textarea id="message"
+					name="message"
+					placeholder="Briefly describe your project to us, or upload its entire specifications below."
+					class="form-input h-[8.125rem]"
+					required></textarea>
+				<p class="form-group__feedback hidden text-sm mt-1 text-red-500">
+					Please enter your message.
+				</p>
+			</div>
+
+			<div class="form-group mb-8">
+				<label for="attachment" class="block font-bold uppercase text-gray-300 text-xs mb-3">Attachments</label>
+				<input type="file"
+					id="attachment"
+					name="attachment[]"
+					class="form-input"
+					data-allowed-size="5000000"
+					accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.zip"
+					multiple />
+				<p class="form-group__feedback hidden text-sm mt-1 text-red-500">
+					Allowed file types are .jpg, .jpeg, .png, .pdf, .doc, .docx, .zip, max file size is 5MB.
+				</p>
+			</div>
+
+			<div class="form-group mb-8">
+				<label for="gdpr" class="flex">
+					<input type="checkbox" id="gdpr" name="gdpr" class="form-checkbox" required />
+					<span>
+						I agree with the processing of my <a href="#"
+							class="inline-block text-primary bg-gradient-to-r from-primary to-primary bg-[length:100%_1px] bg-no-repeat bg-left-bottom transition-[background-size] duration-500 hover:bg-[length:0%_1px]">
+							personal data
+						</a>.
+					</span>
+				</label>
+				<p class="form-group__feedback hidden text-sm mt-1 text-red-500">
+					You must agree with processing of personal data.
+				</p>
+			</div>
+
+			<div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+				<button type="submit" class="btn-primary disabled:opacity-50 disabled:pointer-events-none">
+					<span class="relative z-10">Send message</span>
+				</button>
+
+				<p class="form-feedback hidden">
+					Your message was successfully sent
+				</p>
+			</div>
+		</form>
+	</div>
+</dialog>

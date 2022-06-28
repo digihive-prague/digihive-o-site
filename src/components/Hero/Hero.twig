@@ -1,0 +1,65 @@
+<section class="relative overflow-hidden -mt-12 mb-16">
+	<div class="max-w-container mx-auto px-4">
+		<div class="mb-16 md:mb-0 md:max-w-[36rem] lg:max-w-[54.0625rem]">
+			<strong class="block mt-20 uppercase text-sm mb-2 tracking-widest lg:mt-40">We are Digihive</strong>
+
+			<h1 class="text-[2rem] text-4xl font-bold mb-10 sm:text-[2.25rem] lg:text-5xl">
+				Prague based <span class="underline-highlight">web development</span> agency, ready to meet you<br class="sm:hidden" />
+				whereever&nbsp;in Europe, and <span class="underline-highlight whitespace-nowrap">work for you continuosly</span>
+			</h1>
+
+			<div class="block relative mx-auto -z-10 text-[.5rem] w-[58.625em] mb-10 sm:text-[.625rem] md:absolute md:top-0 md:left-[50%] md:ml-5 md:mb-0 lg:text-sm xl:text-base">
+				<img src="./assets/img/hero-stats.svg"
+					alt="Current month capacities 100 Hrs, At hour rate 70 eur"
+					width="619"
+					loading="lazy"
+					class="hero-stats absolute top-[24%] left-[12%] w-[65.65%] max-w-none animation-heroBounce" />
+				<picture>
+					<source srcset="./assets/img/devices-xs.webp 1x" media="(max-width: 639.98px)" type="image/webp" />
+					<source srcset="./assets/img/devices-xs.jpg 1x" media="(max-width: 639.98px)" />
+					<source srcset="./assets/img/devices.webp 1x, ./assets/img/devices@2x.webp 2x" type="image/webp" />
+					<img src="./assets/img/devices.jpg"
+						srcset="./assets/img/devices@2x.jpg 2x"
+						alt=""
+						width="938"
+						height="804"
+						class="max-w-none w-[58.625em]" />
+				</picture>
+			</div>
+
+			<ul class="flex flex-wrap gap-7 text-xl mb-10">
+				<li class="inline-flex items-center">
+					{% include '../Icon/Icon.twig' with {
+						icon: 'check'
+					} %}
+					<span class="ml-2">Reduce your dev costs</span>
+				</li>
+				<li class="inline-flex items-center">
+					{% include '../Icon/Icon.twig' with {
+						icon: 'check'
+					} %}
+					<span class="ml-2">Maintain superb quality</span>
+				</li>
+				<li class="inline-flex items-center">
+					{% include '../Icon/Icon.twig' with {
+						icon: 'check'
+					} %}
+					<span class="ml-2">Deliver at speed</span>
+				</li>
+			</ul>
+
+			<a href="#what-we-do" class="btn-primary"><span class="relative z-10">See what we do best</span></a>
+
+			{% include '../Clients/Clients.twig' %}
+		</div>
+	</div>
+</section>
+
+<span class="hidden items-center fixed left-12 bottom-12 z-10 -rotate-90 origin-bottom-left 3xl:inline-flex">
+	<span class="scroll-down__bar w-12 border-t border-black">
+		<span class="absolute top-1/2 left-6 -mt-2 inline-block w-4 h-4 bg-primary rounded-full border-4 border-white animate-bounceX">
+
+		</span>
+	</span>
+	<span class="ml-3">Scroll down</span>
+</span>

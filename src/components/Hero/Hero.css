@@ -1,0 +1,15 @@
+.hero-stats {
+	transform: rotateX(300deg) rotateZ(46deg) translate3d(0, 0, 0);
+	animation: heroBounce 4s linear infinite;
+}
+
+@keyframes heroBounce {
+	0%,
+	100% {
+		transform: rotateX(300deg) rotateZ(46deg) translate3d(0, 0, 0);
+	}
+
+	50% {
+		transform: rotateX(300deg) rotateZ(46deg) translate3d(0, 0, 2rem);
+	}
+}

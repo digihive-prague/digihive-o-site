@@ -1,0 +1,38 @@
+<div class="items-center bg-to-bottom-gradient py-12 px-8 text-white rounded-xl rounded-br-[3.75rem] md:flex md:pr-0 md:pl-12 lg:py-16 lg:pl-[4.5rem]">
+	<div class="border-b border-white mb-8 pb-8 md:border-r md:border-b-0 md:pr-12 md:mb-0 md:pb-0">
+		<strong class="block uppercase mb-8 tracking-widest">{{ title }}</strong>
+
+		<p class="text-4xl font-bold mb-7 lg:text-5xl">
+			{{ content }}
+		</p>
+
+		{% if button %}
+			<a href="{{ button.url }}"
+				class="inline-flex justify-center text-center py-5 px-14 text-primary bg-white border border-gray-200 rounded-full shadow leading-5 transition duration-500 hover:bg-primary hover:border-primary hover:text-white">
+				{{ button.title }}
+			</a>
+		{% endif %}
+	</div>
+
+	<div class="px-12 shrink-0 text-center lg:px-[4.5rem]">
+		<div class="flex justify-center mb-6">
+			<picture>
+				<source srcset="./assets/img/{{ author.photo }}.webp 1x, ./assets/img/{{ author.photo }}@2x.webp 2x" type="image/webp" />
+				<img src="./assets/img/{{ author.photo }}.jpg"
+					srcset="./assets/img/{{ author.photo }}@2x.jpg 2x"
+					alt="{{ author.name }}"
+					loading="lazy"
+					width="76"
+					height="76"
+					class="rounded-full shadow-md w-[4.75rem] h-[4.75rem]" />
+			</picture>
+		</div>
+
+		<h3 class="text-xl">
+			{{ author.name }}
+		</h3>
+		<p>
+			{{ author.position }}
+		</p>
+	</div>
+</div>

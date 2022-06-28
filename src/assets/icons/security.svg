@@ -1,0 +1,12 @@
+<svg id="icon-security" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28.26 34.95">
+    <defs>
+        <style>#icon-security path{fill:url(#icon-security-gradient);}</style>
+        <linearGradient id="icon-security-gradient" x1="-272.49" y1="427.36" x2="-272.49" y2="426.36"
+                        gradientTransform="matrix(28.26, 0, 0, -34.95, 7715.15, 14936.2)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#c52fef"/>
+            <stop offset="0.6" stop-color="#6991f0"/>
+            <stop offset="1" stop-color="#24d2ee"/>
+        </linearGradient>
+    </defs>
+    <path d="M14.13,0A8.93,8.93,0,0,0,5.2,8.91h0v3.72h-3A2.25,2.25,0,0,0,0,14.87V32.72A2.25,2.25,0,0,0,2.23,35H26a2.24,2.24,0,0,0,2.23-2.23V14.87A2.24,2.24,0,0,0,26,12.64h-3V8.92A8.9,8.9,0,0,0,14.15,0Zm0,1.49a7.38,7.38,0,0,1,7.43,7.36.09.09,0,0,1,0,.07v3.72H6.69V8.92a7.4,7.4,0,0,1,7.37-7.43ZM2.23,14.13H26a.74.74,0,0,1,.74.74h0V32.72a.72.72,0,0,1-.73.74H2.23a.72.72,0,0,1-.74-.73h0V14.87a.74.74,0,0,1,.73-.74Zm11.9,5.95a2.19,2.19,0,0,0-2.23,2.15v.08a2.14,2.14,0,0,0,.74,1.63V26a1.49,1.49,0,0,0,3,0v-2.1a2.07,2.07,0,0,0,.74-1.62,2.19,2.19,0,0,0-2.15-2.23Z"/>
+</svg>

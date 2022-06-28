@@ -1,0 +1,12 @@
+<svg id="icon-arrow-big" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16.43 80.97">
+    <defs>
+        <style>#icon-arrow-big path{fill:url(#icon-arrow-big-gradient);}</style>
+        <linearGradient id="icon-arrow-big-gradient" x1="-306.09" y1="466.58" x2="-306.09" y2="465.58"
+                        gradientTransform="matrix(-16.43, 0, 0, 80.97, -5021.13, -37697.33)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#c52fef"/>
+            <stop offset="0.6" stop-color="#6991f0"/>
+            <stop offset="1" stop-color="#24d2ee"/>
+        </linearGradient>
+    </defs>
+    <path d="M8.22,81l8.21-8.22L14.67,71,9.44,76.27,9.5,0H7.06L7,76.27,1.76,71,0,72.75Z" />
+</svg>

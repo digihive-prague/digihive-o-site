@@ -1,0 +1,137 @@
+<section class="max-w-container mx-auto px-4 mb-8">
+	<h2 class="text-4xl font-bold text-center mb-8 lg:text-5xl">
+		<span class="underline-highlight">Modern</span> dev stack, stackable and clean code
+	</h2>
+
+	<div class="brands-carousel swiper -mx-4 px-4">
+		<div class="swiper-wrapper pb-12">
+			{% for i in 0..1 %}
+				<div class="swiper-slide">
+					{% include '../Brand/Brand.twig' with {
+						image: './assets/img/html.svg',
+						width: 35,
+						height: 50,
+						title: 'HTML5',
+						customClass: 'w-[2.1875rem] h-[3.125rem]'
+					} %}
+				</div>
+
+				<div class="swiper-slide">
+					{% include '../Brand/Brand.twig' with {
+						image: './assets/img/wordpress.svg',
+						width: 50,
+						height: 50,
+						title: 'Wordpress',
+						customClass: 'w-[3.125rem] h-[3.125rem]'
+					} %}
+				</div>
+
+				<div class="swiper-slide">
+					{% include '../Brand/Brand.twig' with {
+						image: './assets/img/google-analytics.svg',
+						width: 50,
+						height: 50,
+						title: 'Google Analytics',
+						customClass: 'w-[3.125rem] h-[3.125rem]'
+					} %}
+				</div>
+
+				<div class="swiper-slide">
+					{% include '../Brand/Brand.twig' with {
+						image: './assets/img/hotjar.svg',
+						width: 98,
+						height: 47,
+						title: 'Hotjar',
+						customClass: 'w-[6.125rem] h-[2.9375rem]'
+					} %}
+				</div>
+
+				<div class="swiper-slide">
+					{% include '../Brand/Brand.twig' with {
+						image: './assets/img/bootstrap.svg',
+						width: 50,
+						height: 50,
+						title: 'Bootstrap',
+						customClass: 'w-[3.125rem] h-[3.125rem]'
+					} %}
+				</div>
+
+				{% if i == 1 %}
+					<div class="swiper-slide">
+						{% include '../Brand/Brand.twig' with {
+							image: './assets/img/tailwindcss.svg',
+							width: 140,
+							height: 17,
+							title: 'Tailwind CSS',
+							customClass: 'w-[8.75rem] h-[1.0625rem]'
+						} %}
+					</div>
+
+					<div class="swiper-slide">
+						{% include '../Brand/Brand.twig' with {
+							image: './assets/img/jquery.svg',
+							width: 116,
+							height: 28,
+							title: 'jQuery',
+							customClass: 'w-[7.25rem] h-[1.75rem]'
+						} %}
+					</div>
+				{% endif %}
+
+				<div class="swiper-slide">
+					{% include '../Brand/Brand.twig' with {
+						image: './assets/img/angular.svg',
+						width: 47,
+						height: 50,
+						title: 'Angular',
+						customClass: 'w-[2.9375rem] h-[3.125rem]'
+					} %}
+				</div>
+
+				<div class="swiper-slide">
+					{% include '../Brand/Brand.twig' with {
+						image: './assets/img/sass.svg',
+						width: 64,
+						height: 48,
+						title: 'Sass',
+						customClass: 'w-[4rem] h-[3rem]'
+					} %}
+				</div>
+
+				<div class="swiper-slide">
+					{% include '../Brand/Brand.twig' with {
+						image: './assets/img/grunt.svg',
+						width: 37,
+						height: 50,
+						title: 'Grunt',
+						customClass: 'w-[2.3125rem] h-[3.125rem]'
+					} %}
+				</div>
+
+				<div class="swiper-slide">
+					{% include '../Brand/Brand.twig' with {
+						image: './assets/img/bitbucket.svg',
+						width: 129,
+						height: 18,
+						title: 'Bitbucket',
+						customClass: 'w-[8.0625rem] h-[1.125rem]'
+					} %}
+				</div>
+
+				<div class="swiper-slide">
+					{% include '../Brand/Brand.twig' with {
+						image: './assets/img/github.svg',
+						width: 52,
+						height: 50,
+						title: 'Github',
+						customClass: 'w-[3.25rem] h-[3.125rem]'
+					} %}
+				</div>
+			{% endfor %}
+		</div>
+
+		<div class="absolute bottom-0 left-0 w-full">
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+</section>

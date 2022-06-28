@@ -1,0 +1,12 @@
+<svg id="icon-seo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 33.62 33.61">
+    <defs>
+        <style>#icon-seo path{fill:url(#icon-seo-gradient);}</style>
+        <linearGradient id="icon-seo-gradient" x1="-271.17" y1="425.87" x2="-271.17" y2="424.87"
+                        gradientTransform="matrix(33.62, 0, 0, -33.61, 9133.6, 14314.35)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#c52fef"/>
+            <stop offset="0.6" stop-color="#6991f0"/>
+            <stop offset="1" stop-color="#24d2ee"/>
+        </linearGradient>
+    </defs>
+    <path d="M1.91,0A1.91,1.91,0,0,0,0,1.9V5.28a.28.28,0,0,0,0,.13V27.05a.67.67,0,0,0,.67.67H16.23a.68.68,0,1,0,0-1.35H1.36V6.09H28.41V16.9a.68.68,0,0,0,.67.68.69.69,0,0,0,.68-.68h0V1.9A1.92,1.92,0,0,0,27.86,0Zm0,1.35h26a.54.54,0,0,1,.55.52V4.73h-27V1.9a.53.53,0,0,1,.52-.55Zm2.83,8.79V11.5h2.7V10.14Zm4.73,0V11.5H25V10.14ZM4.74,13.52v1.36h2.7V13.52Zm4.73,0v1.36H25V13.52ZM4.74,16.9v1.35h2.7V16.9Zm4.73,0v1.35h9.47V16.9Zm14.88.68a6.76,6.76,0,1,0,4.26,12l4,4,1-1-4-4a6.77,6.77,0,0,0-5.24-11Zm0,1.35a5.41,5.41,0,1,1-5.41,5.41,5.41,5.41,0,0,1,5.41-5.41ZM4.74,20.29v1.35h2.7V20.29Zm4.73,0v1.35h6.76V20.29Z"/>
+</svg>

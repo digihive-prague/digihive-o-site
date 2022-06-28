@@ -1,0 +1,10 @@
+@import './css/variables.css';
+@import './css/typography.css';
+@import './css/utilities.css';
+
+@import './css/buttons.css';
+@import './css/forms.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

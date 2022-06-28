@@ -1,0 +1,15 @@
+{
+  "useTabs": true,
+  "tabWidth": 4,
+  "printWidth": 140,
+  "twigPrintWidth": 140,
+  "trailingComma": "none",
+  "semi": false,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "alignObjectProperties": true,
+  "twigAlwaysBreakObjects": true,
+  "plugins": [
+    "./node_modules/prettier-plugin-twig-melody"
+  ]
+}

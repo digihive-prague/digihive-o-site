@@ -1,0 +1,8 @@
+<span class="inline-flex items-center justify-center shrink-0 grow-0 fill-current w-[1em] h-[1em]">
+    {% if icon %}
+        {% set html %}
+            {% include '../../assets/icons/' ~ icon ~ '.svg' %}
+        {% endset %}
+        {{ html|replace({'<svg':'<svg class="overflow-visible w-full h-full"'}) }}
+    {% endif %}
+</span>
