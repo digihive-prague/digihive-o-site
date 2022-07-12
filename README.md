@@ -1,4 +1,4 @@
-# Digihive Outsourcing
+# Digihive 
 
 ## Development
 

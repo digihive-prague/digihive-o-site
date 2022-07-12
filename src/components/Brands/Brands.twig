@@ -1,134 +1,190 @@
-<section class="max-w-container mx-auto px-4 mb-8">
-	<h2 class="text-4xl font-bold text-center mb-8 lg:text-5xl">
-		<span class="underline-highlight">Modern</span> dev stack, stackable and clean code
+<section class="px-4 mx-auto mb-8 max-w-container">
+	<h2 class="mb-8 text-4xl font-bold text-center lg:text-5xl">
+		<span class="underline-highlight">Modern</span> dev stack, scalable and clean code
 	</h2>
 
-	<div class="brands-carousel swiper -mx-4 px-4">
-		<div class="swiper-wrapper pb-12">
-			{% for i in 0..1 %}
-				<div class="swiper-slide">
-					{% include '../Brand/Brand.twig' with {
-						image: './assets/img/html.svg',
-						width: 35,
-						height: 50,
-						title: 'HTML5',
-						customClass: 'w-[2.1875rem] h-[3.125rem]'
-					} %}
-				</div>
+	<div class="px-4 -mx-4 brands-carousel swiper">
+		<div class="pb-12 swiper-wrapper">
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/html.svg',
+					width: 35,
+					height: 50,
+					title: 'HTML5',
+					customClass: 'w-[2.1875rem] h-[3.125rem]'
+				} %}
+			</div>
 
-				<div class="swiper-slide">
-					{% include '../Brand/Brand.twig' with {
-						image: './assets/img/wordpress.svg',
-						width: 50,
-						height: 50,
-						title: 'Wordpress',
-						customClass: 'w-[3.125rem] h-[3.125rem]'
-					} %}
-				</div>
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/tailwindcss.svg',
+					width: 140,
+					height: 17,
+					title: 'Tailwind CSS',
+					customClass: 'w-[8.75rem] h-[1.0625rem]'
+				} %}
+			</div>
 
-				<div class="swiper-slide">
-					{% include '../Brand/Brand.twig' with {
-						image: './assets/img/google-analytics.svg',
-						width: 50,
-						height: 50,
-						title: 'Google Analytics',
-						customClass: 'w-[3.125rem] h-[3.125rem]'
-					} %}
-				</div>
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/bootstrap.svg',
+					width: 50,
+					height: 50,
+					title: 'Bootstrap',
+					customClass: 'w-[3.125rem] h-[3.125rem]'
+				} %}
+			</div>
 
-				<div class="swiper-slide">
-					{% include '../Brand/Brand.twig' with {
-						image: './assets/img/hotjar.svg',
-						width: 98,
-						height: 47,
-						title: 'Hotjar',
-						customClass: 'w-[6.125rem] h-[2.9375rem]'
-					} %}
-				</div>
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/sass.svg',
+					width: 64,
+					height: 48,
+					title: 'Sass',
+					customClass: 'w-[4rem] h-[3rem]'
+				} %}
+			</div>
 
-				<div class="swiper-slide">
-					{% include '../Brand/Brand.twig' with {
-						image: './assets/img/bootstrap.svg',
-						width: 50,
-						height: 50,
-						title: 'Bootstrap',
-						customClass: 'w-[3.125rem] h-[3.125rem]'
-					} %}
-				</div>
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/less.svg',
+					width: 64,
+					height: 48,
+					title: 'Less',
+					customClass: 'w-[4rem] h-[3rem]'
+				} %}
+			</div>
 
-				{% if i == 1 %}
-					<div class="swiper-slide">
-						{% include '../Brand/Brand.twig' with {
-							image: './assets/img/tailwindcss.svg',
-							width: 140,
-							height: 17,
-							title: 'Tailwind CSS',
-							customClass: 'w-[8.75rem] h-[1.0625rem]'
-						} %}
-					</div>
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/jamstack.svg',
+					width: 98,
+					height: 47,
+					title: 'Jamstack',
+					customClass: 'w-[6.125rem] h-[2.9375rem]'
+				} %}
+			</div>
 
-					<div class="swiper-slide">
-						{% include '../Brand/Brand.twig' with {
-							image: './assets/img/jquery.svg',
-							width: 116,
-							height: 28,
-							title: 'jQuery',
-							customClass: 'w-[7.25rem] h-[1.75rem]'
-						} %}
-					</div>
-				{% endif %}
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/alpine_long.svg',
+					width: 129,
+					height: 47,
+					title: 'Alpine JS',
+					customClass: 'w-[8.0625rem] h-[1.125rem]'
+				} %}
+			</div>
 
-				<div class="swiper-slide">
-					{% include '../Brand/Brand.twig' with {
-						image: './assets/img/angular.svg',
-						width: 47,
-						height: 50,
-						title: 'Angular',
-						customClass: 'w-[2.9375rem] h-[3.125rem]'
-					} %}
-				</div>
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/vue.svg',
+					width: 47,
+					height: 50,
+					title: 'Vue',
+					customClass: 'w-[2.9375rem] h-[3.125rem]'
+				} %}
+			</div>
 
-				<div class="swiper-slide">
-					{% include '../Brand/Brand.twig' with {
-						image: './assets/img/sass.svg',
-						width: 64,
-						height: 48,
-						title: 'Sass',
-						customClass: 'w-[4rem] h-[3rem]'
-					} %}
-				</div>
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/angular.svg',
+					width: 47,
+					height: 50,
+					title: 'Angular',
+					customClass: 'w-[2.9375rem] h-[3.125rem]'
+				} %}
+			</div>
 
-				<div class="swiper-slide">
-					{% include '../Brand/Brand.twig' with {
-						image: './assets/img/grunt.svg',
-						width: 37,
-						height: 50,
-						title: 'Grunt',
-						customClass: 'w-[2.3125rem] h-[3.125rem]'
-					} %}
-				</div>
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/react.svg',
+					width: 50,
+					height: 50,
+					title: 'React',
+					customClass: 'w-[2.9375rem] h-[2.9375rem]'
+				} %}
+			</div>
 
-				<div class="swiper-slide">
-					{% include '../Brand/Brand.twig' with {
-						image: './assets/img/bitbucket.svg',
-						width: 129,
-						height: 18,
-						title: 'Bitbucket',
-						customClass: 'w-[8.0625rem] h-[1.125rem]'
-					} %}
-				</div>
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/jquery.svg',
+					width: 116,
+					height: 28,
+					title: 'jQuery',
+					customClass: 'w-[7.25rem] h-[1.75rem]'
+				} %}
+			</div>
 
-				<div class="swiper-slide">
-					{% include '../Brand/Brand.twig' with {
-						image: './assets/img/github.svg',
-						width: 52,
-						height: 50,
-						title: 'Github',
-						customClass: 'w-[3.25rem] h-[3.125rem]'
-					} %}
-				</div>
-			{% endfor %}
-		</div>
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/docker.svg',
+					width: 100,
+					height: 26,
+					title: 'Docker',
+					customClass: 'w-[6.25rem] h-[1.625rem]'
+				} %}
+			</div>
+
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/npm.svg',
+					width: 71,
+					height: 28,
+					title: 'NPM',
+					customClass: 'w-[4.438rem] h-[1.75rem]'
+				} %}
+			</div>
+
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/webpack.svg',
+					width: 150,
+					height: 43,
+					title: 'Webpack',
+					customClass: 'w-[9.375rem] h-[2.688rem]'
+				} %}
+			</div>
+
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/grunt.svg',
+					width: 37,
+					height: 50,
+					title: 'Grunt',
+					customClass: 'w-[2.3125rem] h-[3.125rem]'
+				} %}
+			</div>
+
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/gulp.svg',
+					width: 23,
+					height: 50,
+					title: 'Gulp',
+					customClass: 'w-[1.438rem] h-[3.125rem]'
+				} %}
+			</div>
+
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/bitbucket.svg',
+					width: 129,
+					height: 18,
+					title: 'Bitbucket',
+					customClass: 'w-[8.0625rem] h-[1.125rem]'
+				} %}
+			</div>
+
+			<div class="swiper-slide">
+				{% include '../Brand/Brand.twig' with {
+					image: './assets/img/github.svg',
+					width: 52,
+					height: 50,
+					title: 'Github',
+					customClass: 'w-[3.25rem] h-[3.125rem]'
+				} %}
+			</div>
+	</div>
 
 		<div class="absolute bottom-0 left-0 w-full">
 			<div class="swiper-pagination"></div>

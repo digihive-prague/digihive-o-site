@@ -1,7 +1,7 @@
-<section id="what-we-do" class="max-w-container mx-auto px-4">
+<section id="what-we-do" class="px-4 mx-auto max-w-container">
 	<div class="py-8 px-6 bg-gray-50 rounded-xl md:py-16 md:px-12 lg:px-[4.375rem]">
-		<h2 class="text-4xl font-bold text-center mb-12 lg:text-5xl">
-			Ready to Launch website within <span class="underline-highlight">2-4 weeks?</span>
+		<h2 class="mb-12 text-4xl font-bold text-center lg:text-5xl">
+			Ready to launch website within <span class="underline-highlight">2-4 weeks?</span>
 		</h2>
 
 		<div class="flex justify-center gap-x-8 gap-[3.75rem] mb-24 relative after:content-[''] after:block after:w-[18rem] after:border-t after:border-gray-200 after:absolute after:top-full after:left-1/2 after:mt-12 after:-translate-x-1/2 md:gap-x-[3.75rem] md:after:w-[33.75rem]">
@@ -46,22 +46,22 @@
 			<div class="flex items-center bg-white px-8 py-10 rounded-xl relative after:content-[''] after:block after:border-l after:h-12 after:border-gray-200 after:absolute after:bottom-full after:left-1/2 md:after:bottom-auto md:after:top-1/2 md:after:left-full md:after:w-12 md:after:h-auto md:after:border-t md:after:border-l-0">
 				<span class="mr-4 text-5xl leading-[0]">
 					{% include '../Icon/Icon.twig' with {
-						icon: 'wordpress'
+						icon: 'browser'
 					} %}
 				</span>
-				<p class="text-primary text-xl">
-					Tailor made Wordpress theme&nbsp;and plugins
+				<p class="text-xl text-primary">
+					Responsive HTML/CSS Templates
 				</p>
 			</div>
 
 			<div class="flex items-center bg-white px-8 py-10 rounded-xl relative before:content-[''] before:block before:h-12 before:border-l before:border-gray-200 before:absolute before:bottom-full before:left-1/2">
 				<span class="mr-4 text-5xl leading-[0]">
 					{% include '../Icon/Icon.twig' with {
-						icon: 'browser'
+						icon: 'wordpress'
 					} %}
 				</span>
-				<p class="text-primary text-xl">
-					Responsive HTML/CSS Templates
+				<p class="text-xl text-primary">
+					CMS of your choice
 				</p>
 			</div>
 
@@ -71,8 +71,8 @@
 						icon: 'analytics'
 					} %}
 				</span>
-				<p class="text-primary text-xl">
-					Reliable website analytics
+				<p class="text-xl text-primary">
+					Custom functionality
 				</p>
 			</div>
 		</div>
@@ -82,29 +82,31 @@
 		</h3>
 
 		<div class="grid grid-cols-2 gap-8 mb-16 md:grid-cols-4 md:gap-12 lg:px-8">
+			
+			{% include '../FeatureBox/FeatureBox.twig' with {
+				icon: 'devices',
+				title: 'Browsers & Devices',
+				description: 'We ensure consistency in every thinkable scenario.'
+			} %}
+			
 			{% include '../FeatureBox/FeatureBox.twig' with {
 				icon: 'speed',
-				title: 'Fast Speed',
-				description: 'Funguje pod taktovkou třech silných osobností z různých oborů digitálu.'
+				title: 'Speed',
+				description: 'Lightning fast websites that both search engines and users will like.'
 			} %}
 
 			{% include '../FeatureBox/FeatureBox.twig' with {
 				icon: 'security',
-				title: 'Strong Security',
-				description: 'Funguje pod taktovkou třech silných osobností z různých oborů digitálu.'
+				title: 'Security',
+				description: 'Do not worry about bugs and holes we got you covered.'
 			} %}
 
 			{% include '../FeatureBox/FeatureBox.twig' with {
 				icon: 'seo',
-				title: 'Great SEO',
-				description: 'Funguje pod taktovkou třech silných osobností z různých oborů digitálu.'
+				title: 'SEO',
+				description: 'Everything you need to star in search results.'
 			} %}
 
-			{% include '../FeatureBox/FeatureBox.twig' with {
-				icon: 'devices',
-				title: 'All Browsers & Devices',
-				description: 'Funguje pod taktovkou třech silných osobností z různých oborů digitálu.'
-			} %}
 		</div>
 
 		<div class="text-center">

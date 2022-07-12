@@ -1,23 +1,51 @@
-<div class="max-w-container mx-auto px-4 mb-8">
+<div class="px-4 mx-auto mb-8 max-w-container">
 	<div class="testimonials-carousel swiper">
-		<div class="swiper-wrapper pb-12">
-			{% for i in 0..1 %}
-				<div class="swiper-slide">
-					{% include '../Testimonial/Testimonial.twig' with {
-						title: 'Clients says',
-						content: '"Spolupráce byla bezchybná. Moji kluci z&nbsp;Inevia naprosto přesně ví co dělají. Kdo potřebuje web, ať se jim ozve."',
-						button: {
-							title: 'Contact us now',
-							url: '#contactPopup'
-						},
-						author: {
-							name: 'Tomáš Hruška',
-							position: "Country Managing Director<br />L'Oréal Czech republic",
-							photo: 'tomas-hruska'
-						}
-					} %}
-				</div>
-			{% endfor %}
+		<div class="pb-12 swiper-wrapper">
+			<div class="swiper-slide">
+				{% include '../Testimonial/Testimonial.twig' with {
+					title: 'Clients say',
+					content: '"We ride on same wave and that`s what I love. Sharing your a goal and vision is enough for digihive to deliver the best solution there is. "',
+					button: {
+						title: 'Contact us now',
+						url: '#contactPopup'
+					},
+					author: {
+						name: 'Sandra',
+						position: "Brand Activation Manager<br />L'Oréal",
+						photo: 'sandra'
+					}
+				} %}
+			</div>
+			<div class="swiper-slide">
+				{% include '../Testimonial/Testimonial.twig' with {
+					title: 'Clients say',
+					content: '"Yo dog you are great guys love working with you."',
+					button: {
+						title: 'Contact us now',
+						url: '#contactPopup'
+					},
+					author: {
+						name: 'Isaac',
+						position: "CEO<br />reciProfity",
+						photo: 'isaac'
+					}
+				} %}
+			</div>
+			<div class="swiper-slide">
+				{% include '../Testimonial/Testimonial.twig' with {
+					title: 'Clients say',
+					content: '"Bigger projects mean constant change. Digihve not only keeps pace but independently delivers solutions that meet our ideas ."',
+					button: {
+						title: 'Contact us now',
+						url: '#contactPopup'
+					},
+					author: {
+						name: 'Jonas',
+						position: "Marketing Director<br />Mokate",
+						photo: 'jonas'
+					}
+				} %}
+			</div>
 		</div>
 
 		<div class="absolute bottom-0 left-0 w-full">
